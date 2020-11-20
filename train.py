@@ -15,8 +15,8 @@ from yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_body, yolo_l
 from yolo3.utils import get_random_data
 
 def _main():
-    annotation_path_train = 'train_license_plate/_annotations.txt'  # path to Roboflow data annotations
-    annotation_path_valid = 'valid_license_plate/_annotations.txt'
+    annotation_path_train = 'train_masks/_annotations.txt'  # path to Roboflow data annotations
+    annotation_path_valid = 'valid_masks/_annotations.txt'
     log_dir = 'logs/000/'                                  # where we're storing our logs
     classes_path = 'model_data/_classes.txt'               # path to Roboflow class names
     anchors_path = 'model_data/yolo_anchors.txt'
